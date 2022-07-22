@@ -1,6 +1,6 @@
 // Variables to configure board size
-let ROWS: number = 5;
-let COLUMNS:number = 5;
+let ROWS: number = 15;
+let COLUMNS:number = 15;
 
 // Variables to keep the track of state of game
 let virtualBoard: string [][] = [];
