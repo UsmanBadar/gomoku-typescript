@@ -1,0 +1,94 @@
+body{
+    margin: 0 auto;
+}
+
+#user-form{
+    text-align: center;
+    margin: 20px;
+}
+
+#user-form > label{
+    font-size: 13px;
+}
+
+#user-form > input{
+    margin: 10px;
+    width: 75px;
+    height: 20px;
+}
+
+#warning-msg{
+    text-align: center;
+    color: red;
+}
+
+#header{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    background-color: red;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    
+}
+
+.board{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid yellow;
+    margin-top: 30px;
+}
+
+.row{
+  display: flex;
+  flex-direction: row; 
+  background-color: yellow;
+}
+
+
+.cube{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #cccbc8;
+    margin: 2.5px;
+    border-radius: 20px;
+    background-color: #cccbc8;
+    cursor: pointer;
+}
+
+#player-msg{
+    text-align: center;
+}
+
+.clicked{
+    pointer-events: none;
+}
+
+.clicked::hover{
+    cursor: not-allowed;
+}
+
+.white{
+    background-color: white;
+}
+
+.black{
+    background-color: black;
+}
+.reset{
+    color: black;
+}
+
+#status{
+    text-align: center;
+    
+}
