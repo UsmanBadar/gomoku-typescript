@@ -123,7 +123,6 @@ function handlePlayerClick(row: number, cube:number, virtualBoard: string[][]): 
     if(warningMsg.innerHTML != ''){warningMsg.innerHTML = '';}
     const clickedCube: HTMLElement = document.getElementById(`${row}-${cube}`)!;
     clickedCube.classList.add('clicked', currentPlayer.toLowerCase());
-    console.log(clickedCube);
     (currentPlayer === 'Black')? virtualBoard[row][cube] = 'b' : virtualBoard[row][cube] = 'w';
     const gameResult: boolean | string = checkWinner(virtualBoard);
     if(gameResult == 'continue'){
